@@ -103,10 +103,45 @@ input[type='text'] {
 
 .sidebar {
     background-color: #1992d4;
-    grid-area: sidebar
+    grid-area: sidebar;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3em;
+    color: #ffffff;
+    font-weight: bold;
 }
 
+.sidebar img { 
+    filter: invert(100%) sepia(0%) saturate(7465%) hue-rotate(58deg) brightness(121%) contrast(110%);
+}
 .main-content {
     background-color: #e2e8f0;
     grid-area: main-content;
+}
+
+.main-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dashboard-icon {
+    height: 40px;
+}
+
+.main-menu {
+    display: grid;
+    row-gap: 14px;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+}
+
+.account-menu {
+    display: grid;
+    row-gap: 14px;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    display: grid;    
 }
